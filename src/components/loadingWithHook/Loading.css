@@ -1,0 +1,48 @@
+.loadingPanel {
+    padding: 50px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 20px;
+    /* box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4); */
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+  }
+  .loadingPanel .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .text {
+    color: black;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .button {
+    background: #06497c;
+    color: rgb(250, 253, 255);
+    outline: none;
+    box-shadow: none !important;
+  }
+  .button:hover {
+    background: #022642;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .loadingPanel {
+      padding: 10px !important;
+      width: 300px !important;
+    }
+  }
